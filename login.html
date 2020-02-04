@@ -6,42 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Login PlatziVideo</title>
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/main.css">
 </head>
 
 <body>
     <header class="main--contenedor">
-        <h1>PlatziVideo</h1>
+        <img src="img/logo-platzi-video-BW2.png" alt="platzi">
     </header>
-    <section>
+    <section class="section--login">
         <div class="login">
             <div class="login--contenedor">
-                <h2>Iniciar Sesión</h2>
-                <form>
-                    <input type="email" placeholder="Correo" class="login__correo">
-                    <input type="password" placeholder="Contraseña" class="login__contraseña">
-                    <button class="login__boton">Iniciar sesión </button>
-                    <div class="login__recordarme--contenedor">
-                        <label><input type="checkbox">Recordarme</label>
-                        <a href="">Olvidé mi contraseña</a>
+                <form class="login__form">
+                    <h2>Iniciar Sesión</h2>
+                    <input type="email" placeholder="Correo" class="login__form--correo">
+                    <input type="password" placeholder="Contraseña" class="login__form--contra">
+                    <button class="login__form--boton">Iniciar sesión </button>
+                    <div class="login__opciones--contenedor">
+                        <label class="texto_terciario login__opciones--label"><input type="checkbox">Recordarme</label>
+                        <a href="#" class="texto_terciario">Olvidé mi contraseña</a>
                     </div>
                 </form>
-                <ul>
+                <ul class="login__ul">
                     <li>
-                        <img src="" alt="google"><a href="#">Inicia sesión con Google</a>
+                        <img src="img/google-icon.png" alt="google"><a href="#" class="texto_terciario">Inicia sesión
+                            con <span>Google</span></a>
                     </li>
                     <li>
-                        <img src="" alt="twitter"><a href="#">Inicia sesión con Twitter</a>
+                        <img src="img/twitter-icon.png" alt="twitter"><a href="#" class="texto_terciario">Inicia sesión
+                            con <span>Twitter</span></a>
                     </li>
                 </ul>
-                <p>No tienes una cuenta? <a href="#">Regístrate</a></p>
+                <p class="login__p texto_terciario">No tienes una cuenta? <a href="#" class="login__p--a">Regístrate</a>
+                </p>
             </div>
         </div>
     </section>
     <footer class="main--contenedor">
         <ul>
-            <li><a href="#">Términos de uso</a></li>
-            <li><a href="#">Declaración de privacidad</a></li>
-            <li><a href="#">Centro de ayuda</a></li>
+            <li><a href="#" class="texto_terciario">Términos de uso</a></li>
+            <li><a href="#" class="texto_terciario">Declaración de privacidad</a></li>
+            <li><a href="#" class="texto_terciario">Centro de ayuda</a></li>
         </ul>
     </footer>
 </body>

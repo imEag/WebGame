@@ -1,0 +1,158 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+:root {
+    --bg: #21c08b;
+    --bg-login: linear-gradient(#21C08B, #AB88FF);
+    --bg-aclarador: rgba(255, 255, 255, 0.1);
+    --fuente: 'Muli', sans-serif;
+}
+
+body {
+    font-family: var(--fuente);
+    background: var(--bg-login);
+}
+
+ul {
+    list-style: none;
+}
+
+a, p, label {
+    text-decoration: none;
+    color: white;
+}
+
+.texto_terciario {
+    font-size: 14px;
+}
+
+/* ------------------------------------- */
+
+/* --------------Header------------ */
+
+header {
+    padding: 20px;
+    height: 110px;
+}
+
+img {
+    max-width: 200px;
+}
+
+/* --------------section------------ */
+
+.section--login {
+    display: block;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.login {
+    border: 2px solid white;
+    border-radius: 25px;
+    background-color: var(--bg-aclarador);
+    width: 400px;
+}
+
+.login--contenedor {
+    margin: 55px;
+}
+
+h2 {
+    color: white;
+    margin: 0;
+    font-size: 20px;
+    padding: 60px 0;
+}
+
+.login__form {
+    
+}
+
+.login__form--correo, .login__form--contra {
+    display: block;
+    width: 100%;
+    border-left: 0px;
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 2px solid white;
+    padding: 10px 0;
+    margin: 25px 0;
+    background-color: transparent;
+}
+
+.login__form--correo, .login__form--contra::placeholder {
+    color: white;
+    font-weight: bold;
+}
+
+.login__form--boton {
+    width: 100%;
+    margin:  0;
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 0;
+    border-radius: 25px;
+    padding: 15px 0;
+    color: white;
+    margin: 26px 0;
+}
+
+.login__opciones--contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.login__opciones--label{
+    display: flex;
+    align-items: center;
+} 
+
+.login__ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 60px 0;
+}
+
+.login__ul li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.login__ul span {
+    font-weight: bold;
+}
+
+.login__p--a {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* --------------footer------------ */
+
+footer{
+    width: 100%;
+    height: 110px;
+    margin: 40px 0 0 0;
+}
+
+footer ul{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+}
+
+footer ul li {
+    font-weight: bold;
+    padding: 0 20px;
+}

@@ -10,7 +10,6 @@ html {
     --bg: #21c08b;
     --bg-registro: linear-gradient(#5DB6EA, #2C3459);
     --bg-login: linear-gradient(#0E3B43, #2C3459);
-
     --bg-aclarador: rgba(255, 255, 255, 0.1);
     --fuente: 'Muli', sans-serif;
     --fuente2: 'Raleway', sans-serif;
@@ -23,7 +22,7 @@ body {
     background-size: 100vh;
 }
 
-body.registro{
+body.registro {
     background: var(--bg-registro);
 }
 
@@ -58,7 +57,7 @@ img {
     max-width: 200px;
 }
 
-h1{
+h1 {
     color: white;
     font-family: var(--fuente2);
     font-size: 50px;
@@ -68,7 +67,53 @@ h1{
 
 /* --------------buscador-------------------------- */
 
+.buscador {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 60px 0;
+}
+
+.buscador h2 {
+    margin: 30px 0;
+    padding: 0;
+}
+
+.buscador input {
+    background-color: var(--bg-aclarador);
+    border: 2px solid white;
+    border-radius: 25px;
+    height: 50px;
+    width: 32%;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+}
+
 /* --------------carrusel-------------------------- */
+
+.carrusel {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.carrusel--contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carrusel__item {
+    width: 200px;
+    border-radius: 25px;
+}
+
+.carrusel__item img {
+    display: inline-block;
+}
 
 /* --------------section-login-registro------------ */
 
@@ -136,7 +181,7 @@ h2 {
 
 .login__form--boton {
     width: 100%;
-    margin:  0;
+    margin: 0;
     background-color: rgba(255, 255, 255, 0.4);
     border: 0;
     border-radius: 25px;
@@ -152,10 +197,10 @@ h2 {
     margin: 10px 0;
 }
 
-.login__opciones--label{
+.login__opciones--label {
     display: flex;
     align-items: center;
-} 
+}
 
 .login__ul {
     display: flex;
@@ -182,13 +227,13 @@ h2 {
 
 /* --------------footer------------ */
 
-footer{
+footer {
     width: 100%;
     height: 110px;
     margin: 40px 0 0 0;
 }
 
-footer ul{
+footer ul {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -197,12 +242,11 @@ footer ul{
 }
 
 @media only screen and (max-width: 480px) {
-    footer ul{
+    footer ul {
         flex-direction: column;
         align-items: flex-start;
         padding: 0;
     }
-
     footer ul li {
         margin: 10px 0;
     }

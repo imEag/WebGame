@@ -8,8 +8,9 @@ html {
 
 :root {
     --bg: #21c08b;
-    --bg-login: linear-gradient(#5DB6EA, #2C3459);
-    /* --bg-login: linear-gradient(#21C08B, #AB88FF); */
+    --bg-registro: linear-gradient(#5DB6EA, #2C3459);
+    --bg-login: linear-gradient(#0E3B43, #2C3459);
+
     --bg-aclarador: rgba(255, 255, 255, 0.1);
     --fuente: 'Muli', sans-serif;
     --fuente2: 'Raleway', sans-serif;
@@ -20,6 +21,10 @@ body {
     font-family: var(--fuente2);
     background: var(--bg-login);
     background-size: 100vh;
+}
+
+body.registro{
+    background: var(--bg-registro);
 }
 
 ul {
@@ -58,9 +63,14 @@ h1{
     font-family: var(--fuente2);
     font-size: 50px;
     margin: 0;
+    font-weight: lighter;
 }
 
-/* --------------section------------ */
+/* --------------buscador-------------------------- */
+
+/* --------------carrusel-------------------------- */
+
+/* --------------section-login-registro------------ */
 
 .section--login {
     display: block;
@@ -107,7 +117,7 @@ h2 {
     }
 }
 
-.login__form--correo, .login__form--contra {
+.login__form--correo, .login__form--contra, .login__form--nombre {
     display: block;
     width: 100%;
     border-left: 0px;
@@ -119,7 +129,7 @@ h2 {
     background-color: transparent;
 }
 
-.login__form--correo, .login__form--contra::placeholder {
+.login__form--correo, .login__form--nombre, .login__form--contra::placeholder {
     color: white;
     font-weight: bold;
 }
@@ -191,6 +201,10 @@ footer ul{
         flex-direction: column;
         align-items: flex-start;
         padding: 0;
+    }
+
+    footer ul li {
+        margin: 10px 0;
     }
 }
 

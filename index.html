@@ -10,11 +10,29 @@
     <link rel="stylesheet" href="CSS/main.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway|Teko&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header class="main--contenedor">
-        <h1 class="pointer"><a href="index.html">WebGame</a></h1>
+        <div class="header__titulo">
+            <h1 class="pointer"><a href="index.html">WebGame</a></h1>
+        </div>
+        <div class="header__perfil pointer">
+            <div class="header__perfil--contenedor">
+                <div class="header__perfil-mainmenu">
+                    <h3>Perfil</h3>
+                    <img src="../assets/icons8-nombre-64.png" alt="ImgUsuario">
+                </div>
+                <ul class="header__perfil--menu">
+                    <a href="#">
+                        <li>Ajustes</li>
+                    </a>
+                    <a href="#">
+                        <li>Cerrar Sesión</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
     </header>
-
     <section class="buscador">
         <h2>¿Qué quieres jugar hoy?</h2>
         <input type="text" placeholder="Escribe para encontrar un juego...">

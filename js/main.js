@@ -3,7 +3,7 @@
 $('document').ready(() => {
 
     /* carousel scroll with arrows */
-    $('#carrusel-arrow--left').click((elem) => {
+    $('.carrusel-arrow--left').click((elem) => {
         console.log('click left arrow');
         console.log(elem);
 
@@ -14,7 +14,7 @@ $('document').ready(() => {
 
     });
 
-    $('#carrusel-arrow--right').click((elem) => {
+    $('.carrusel-arrow--right').click((elem) => {
         console.log('click right arrow');
         console.log(elem);
         

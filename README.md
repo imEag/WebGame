@@ -2,6 +2,7 @@
 
 Videogame catalogue design
 
+[Visit the project website](https://imeag.github.io/WebGame/)
 
 ## Features
 
